@@ -1,6 +1,28 @@
 ## `note`
 
-In music.kit a note is represented by string, usually in scientific notation.
+Get a note from a string (or null if the string is not a valid note).
+In tonal a note is represented by a string with a note in scientific notation.
+
+This is an alias of `notation.note`
+
+### Parameters
+
+* `src` **`String`** the source
+
+
+### Examples
+
+```js
+note = require('tonal.note')
+note('fx2') // => 'F##2'
+note('bbb') // => 'Bbb'
+note('blah') // => null
+```
+
+Returns `String` the note in scientific notation
+
+
+## `note`
 
 The note module provides functions to manipulate notes:
 
@@ -32,7 +54,7 @@ This function is an alias of `tonal.distance`
 ### Examples
 
 ```js
-var distance = require('music.kit/note/distance')
+var distance = require('tonal.note/distance')
 distance('C2', 'D3') // => '9M'
 distance('D2', 'C2') // => '-2M'
 distance('D', 'C') // => '7m'
@@ -137,29 +159,6 @@ midi([0, 2]) // => 36 (C2 in array notation)
 ```
 
 Returns `Integer` the midi number
-
-
-## `note.note`
-
-Get a note from a string (or null if not valid note)
-
-This is an alias of `notation.note`
-
-### Parameters
-
-* `src` **`String`** the source
-
-
-### Examples
-
-```js
-note = require('music.kit/note/note')
-note('fx2') // => 'F##2'
-note('bbb') // => 'Bbb'
-note('blah') // => null
-```
-
-Returns `String` the note in scientific notation
 
 
 ## `note.pitchClass`
