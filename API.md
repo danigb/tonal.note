@@ -22,21 +22,6 @@ note('blah') // => null
 Returns `String` the note in scientific notation
 
 
-## `note`
-
-The note module provides functions to manipulate notes:
-
-- Scientific notation: `ntc` and `ctn`
-- Midi and frequencies: `note.midi`, `note.freq`, `note.fromMidi`
-- Note properties: `note.pitchClass`, `note.setOctave`
-- Enharmonics: `note.enharmonics`
-- Transposition and distances: `note.transpose`, `note.distance`
-
-
-
-
-
-
 ## `note.distance`
 
 Get the interval between two notes

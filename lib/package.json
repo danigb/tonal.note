@@ -1,0 +1,33 @@
+{
+  "name": "tonal.note",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Manipulate musical notes",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/tonal.note.git"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "note",
+    "pitch",
+    "transpose"
+    "tonal"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/tonal.note/issues"
+  },
+  "homepage": "https://github.com/danigb/tonal.note#readme",
+  "dependencies": {
+    "tonal.distance": "file:../../distance",
+    "tonal.notation": "file:../../notation/lib",
+    "tonal.pitch": "file:../../pitch/lib",
+    "tonal.transpose": "file:../../transpose"
+  }
+}
