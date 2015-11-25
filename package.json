@@ -1,11 +1,11 @@
 {
-  "name": "tonal.note",
+  "name": "tonal.note-support",
   "version": "0.0.0",
   "private": "true",
-  "description": "Musical pitch sets",
+  "description": "Musical notes",
   "main": "lib/index.js",
   "scripts": {
-    "build": "cp README.md lib/ && npm run docs && npm run dist && npm run disc && npm run coverage",
+    "build": "cp README.md lib/ && npm run docs && npm run coverage && npm run disc && npm run dist",
     "test": "vows --spec test/*.js",
     "docs": "documentation -f md > API.md",
     "dist": "browserify lib/index.js | uglifyjs > dist/tonal.note.min.js&& ls -hall dist/",
@@ -13,7 +13,8 @@
     "coverage": "istanbul cover vows test/*.js",
     "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
     "climate": "npm run coverage && npm run codeclimate",
-    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate-test-reporter < coverage/lcov.info"
+    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate-test-reporter < coverage/lcov.info",
+    "update": "rm -rf node_modules/tonal.* && npm i && npm dedupe"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,9 @@
     "vows": "^0.8.x"
   },
   "dependencies": {
-    "tonal.distance": "file:../distance",
-    "tonal.notation": "file:../notation/lib",
-    "tonal.pitch": "file:../pitch/lib",
-    "tonal.transpose": "file:../transpose"
+    "tonal.distance": "0.0.x",
+    "tonal.notation": "0.0.x",
+    "tonal.pitch": "0.0.x",
+    "tonal.transpose": "0.0.x"
   }
 }

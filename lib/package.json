@@ -1,7 +1,6 @@
 {
   "name": "tonal.note",
   "version": "0.0.1",
-  "private": "true",
   "description": "Manipulate musical notes",
   "main": "index.js",
   "scripts": {
@@ -15,7 +14,7 @@
     "theory",
     "note",
     "pitch",
-    "transpose"
+    "transpose",
     "tonal"
   ],
   "author": "danigb",
@@ -25,9 +24,9 @@
   },
   "homepage": "https://github.com/danigb/tonal.note#readme",
   "dependencies": {
-    "tonal.distance": "file:../../distance",
-    "tonal.notation": "file:../../notation/lib",
-    "tonal.pitch": "file:../../pitch/lib",
-    "tonal.transpose": "file:../../transpose"
+    "tonal.distance": "0.0.x",
+    "tonal.notation": "0.0.x",
+    "tonal.pitch": "0.0.x",
+    "tonal.transpose": "0.0.x"
   }
 }

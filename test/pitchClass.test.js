@@ -5,7 +5,7 @@ var pitchClass = require('..').pitchClass
 vows.describe('note.pitchClass').addBatch({
   'note pitch class': function () {
     assert.equal(pitchClass('c#2'), 'C#')
-    assert.equal(pitchClass('fx:4'), 'F##')
+    assert.equal(pitchClass('fx/4'), 'F##')
   },
   'array notation': function () {
     assert.deepEqual(pitchClass([1, 2, 0]), [1])
